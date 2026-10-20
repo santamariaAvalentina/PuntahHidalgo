@@ -1,0 +1,154 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins" as *;
+/*------main general----*/
+main{
+    background-color: $bg-main;
+    color: $texto-color;
+}
+/*------main Index----*/
+.saboresEnVivo{
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.GuitarrasFotos{
+    @include flex (space-between, center);
+}
+.GuitarrasFotos img{
+    width: 100%;
+    height: auto;
+}
+.imagenSabores{
+    @include flex (space-between, center);
+    gap: 20px;
+}
+.imagenSabores img{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 8px grey;
+    border-radius: 10px;
+}
+/*--------main conocenos-----*/
+.conocenosTitulo{
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.conocenos{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+}
+.conocenosTexto{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.conocenosTexto img{
+    width: 200px;
+}
+.guitarrasTexto{
+    @include flex (center, center);
+}
+.conocenosTexto img{
+    box-shadow: $sombra-imagenes ;
+    margin-bottom: 10px;
+}
+/*------main carta-------*/
+.contenedorCarta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cartaComidas{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding:20px;
+    box-shadow: $sombra-imagenes ;
+    
+    
+    
+}
+.imagenComidaTexto{
+    @include flex (center, null);
+    gap: 50px;
+    margin-top: 20px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    
+}
+.imagenComidaTexto img{
+    border-radius: 8px;
+}
+.tragos{
+    @include flex (space-around,center)
+}
+.tragos img{
+    width: 200px;
+}
+/*------main reservas------*/
+.boton{
+    padding: 10px;
+    margin: 10px;
+    border-style:groove;
+    border-radius: 6px ;
+    background-color: rgb(20, 19, 19);
+    color: white;
+
+}
+.reservaSola{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.reservas{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    gap: 20px;
+    margin: 5px;
+}
+.reservasAlineadas{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
+
+.estiloReservas{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding:20px;
+    box-shadow: $sombra-imagenes ;
+}
+.reservaTelefono{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.whatsappReservas{
+    @include flex (center, center);
+}
+.reservaLocal{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+}
+/*-----------main Shows------*/
+.show {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    text-align: center;
+}
+.showTexto{
+    display: flex;
+    flex-direction: column ;
+}
+
+
+.show img{
+    box-shadow: $sombra-imagenes ;
+    width: 200px;
+    height: auto;
+}

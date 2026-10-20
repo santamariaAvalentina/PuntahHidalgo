@@ -1,0 +1,44 @@
+@use "../utilities/variable" as *;
+.contacto{
+    position: fixed;
+    top: 500px;
+    bottom: 20%;
+    right: 30px;
+    cursor: $cursor;  
+    z-index: 1000;
+}
+
+.btn-outline-secondary{
+    box-shadow: 0 0 20px;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.btn-carta-online {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff8a00, #ff5e00);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(255, 112, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-carta-online:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(255, 112, 0, 0.35);
+}
+
+.btn-carta-online:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}

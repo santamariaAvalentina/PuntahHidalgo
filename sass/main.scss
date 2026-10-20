@@ -1,0 +1,21 @@
+@use "utilities/variable" as *;
+
+@use "components/boton";
+@use "components/navegador";
+@use "components/formulario";
+
+@use "base/reset";
+@use "base/tipografia";
+@use "base/alineacion";
+
+
+@use "layout/body";
+@use "layout/header";
+@use "layout/main";
+@use "layout/footer";
+@use "layout/pseudoclases";
+@use "layout/pseudoelementos";
+@use "layout/boostrap";
+@use "layout/animaciones";
+@use "layout/mediaqueris";
+

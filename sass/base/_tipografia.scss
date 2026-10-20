@@ -1,0 +1,10 @@
+
+@use "../utilities/variable" as *;
+
+h1, h2, h3{
+
+    font-family: $fuente-titlos;
+    font-weight: $grosor-letra;
+    font-size: $size-letra;
+    color: $texto-color;
+}

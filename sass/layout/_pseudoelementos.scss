@@ -1,0 +1,18 @@
+@use "../utilities/variable" as *;
+.pizza::before{
+    content:'🍕';
+}
+.telefono::before{
+    content: '📞';
+    margin-right: 5px;
+}
+.auto::before{
+    content: '🚗';
+}
+.online::before{
+    content: '🎹';
+}
+::selection{
+    background-color:white;
+    color: black;
+}

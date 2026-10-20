@@ -1,0 +1,57 @@
+
+@use "../utilities/variable" as *;
+@use "../utilities/mixins" as *;
+
+header {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../img/entrada.webp") center / cover no-repeat;
+}
+
+/* Contenedor del logo */
+.logoNombre {
+  @include flex(center, center);
+  min-height: 320px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  text-shadow: 1px 1px 10px rgba(11, 11, 11, 0.75);
+}
+
+/* Imagen del logo */
+.logoNombre img {
+  display: block;
+  width: min(90%, 650px);
+  max-height: 280px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  box-shadow: none;
+  border-radius: 0;
+ 
+}
+
+/* Título, si todavía existe como texto HTML */
+h1 {
+  color: $texto-color;
+  margin: 0;
+}
+
+/* Enlaces del menú */
+header nav ul li a {
+  color: $texto-color;
+  text-decoration: none;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+  .logoNombre {
+    min-height: 220px;
+    padding: 24px 12px;
+  }
+
+  .logoNombre img {
+    width: 95%;
+    max-height: 190px;
+  }
+}

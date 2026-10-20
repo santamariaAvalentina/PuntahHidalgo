@@ -1,0 +1,11 @@
+@use "../utilities/mixins" as *;
+
+.formulario{
+    @include flex (center,center);
+    flex-direction: column;
+    gap: 15px;
+}
+.diasReserva{
+    display: grid;
+    grid-template-columns: 1fr;
+}

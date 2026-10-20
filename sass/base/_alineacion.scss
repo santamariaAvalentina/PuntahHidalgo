@@ -1,0 +1,11 @@
+@use "../utilities/variable" as *;
+
+.textoDerecha{
+    text-align: $texto-derecha;
+}
+.textoIzquierda{
+    text-align: $texto-izquierda;
+}
+.textoCentrado{
+    text-align:$texto-centrado;
+}

@@ -1,0 +1,12 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins" as *;
+nav ul {
+    list-style: none;
+}
+/*-----carrusel----*/
+.carrusel{
+    @include flex (center, center);
+}
+.img-carrusel{
+    object-fit: cover;
+}

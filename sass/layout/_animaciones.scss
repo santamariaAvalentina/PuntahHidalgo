@@ -1,0 +1,48 @@
+@use "../utilities/variable" as *;
+
+.btn-outline-secondary{
+    transition: transform 1s ease;
+}
+.btn-outline-secondary:hover{
+    transform: translate(3px,-3px);
+}
+.contacto{
+    transition: transform 1s ease;
+}
+.contacto:hover{
+    transform: translate(3px,-3px);
+    
+}
+.contactoReserva{
+    transition: transform 3s ease;
+    
+}
+.contactoReserva:hover{
+    transform: $trans-chico;
+}
+.boton{
+    transition: transform 0.1s ease, box-shadow 0.1 ease;
+}
+.boton:hover{
+    transform: translate(0.5px,0.5px);
+    box-shadow: $sombra-imagenes;
+}
+.boton:active{
+    background-color: grey;
+    transform: translate(0.3px 0.3px );
+    box-shadow: 1px 1px 8px black;
+}
+/*------------------keyframe----------*/
+.cartaComidas{
+    animation: aparecer 3s
+}
+.imagenSabores{
+    animation: aparecer 3s ;
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        scale: 0.2;
+    }
+    to{opacity: 1;}
+}

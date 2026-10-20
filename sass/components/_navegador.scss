@@ -1,0 +1,22 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins" as *;
+.navegador{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    opacity: 0.8;
+    
+}
+.navegadorEstilo{
+    @include flex (space-around,center);
+    text-align: center;
+    background-color:#cc591b;
+    padding: 10px;
+}
+.navegadorEstilo a{
+    color:$texto-color;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 2px;
+}
+

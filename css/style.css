@@ -1,0 +1,608 @@
+@charset "UTF-8";
+/*-----generales----*/
+/*------body----*/
+/*------header---*/
+/*------main------*/
+/*------footer----*/
+/*---------cursor-------*/
+/*------sombra----*/
+/*------alineaciones-----*/
+/*-----animaciones----*/
+.contacto {
+  position: fixed;
+  top: 500px;
+  bottom: 20%;
+  right: 30px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.btn-outline-secondary {
+  box-shadow: 0 0 20px;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-carta-online {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff8a00, #ff5e00);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(255, 112, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-carta-online:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(255, 112, 0, 0.35);
+}
+
+.btn-carta-online:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
+.navegador {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  opacity: 0.8;
+}
+
+.navegadorEstilo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #cc591b;
+  padding: 10px;
+}
+
+.navegadorEstilo a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 2px;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.diasReserva {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: serif;
+  font-weight: 900;
+  font-size: 35px;
+  color: white;
+}
+
+.textoDerecha {
+  text-align: right;
+}
+
+.textoIzquierda {
+  text-align: left;
+}
+
+.textoCentrado {
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/entrada.webp") center/cover no-repeat;
+}
+
+/* Contenedor del logo */
+.logoNombre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 320px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  text-shadow: 1px 1px 10px rgba(11, 11, 11, 0.75);
+}
+
+/* Imagen del logo */
+.logoNombre img {
+  display: block;
+  width: min(90%, 650px);
+  max-height: 280px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Título, si todavía existe como texto HTML */
+h1 {
+  color: white;
+  margin: 0;
+}
+
+/* Enlaces del menú */
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+  .logoNombre {
+    min-height: 220px;
+    padding: 24px 12px;
+  }
+  .logoNombre img {
+    width: 95%;
+    max-height: 190px;
+  }
+}
+/*------main general----*/
+main {
+  background-color: color black;
+  color: white;
+}
+
+/*------main Index----*/
+.saboresEnVivo {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.GuitarrasFotos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.GuitarrasFotos img {
+  width: 100%;
+  height: auto;
+}
+
+.imagenSabores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.imagenSabores img {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 8px grey;
+  border-radius: 10px;
+}
+
+/*--------main conocenos-----*/
+.conocenosTitulo {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.conocenos {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+}
+
+.conocenosTexto {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.conocenosTexto img {
+  width: 200px;
+}
+
+.guitarrasTexto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conocenosTexto img {
+  box-shadow: 1px 1px 20px;
+  margin-bottom: 10px;
+}
+
+/*------main carta-------*/
+.contenedorCarta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cartaComidas {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 1px 1px 20px;
+}
+
+.imagenComidaTexto {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.imagenComidaTexto img {
+  border-radius: 8px;
+}
+
+.tragos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tragos img {
+  width: 200px;
+}
+
+/*------main reservas------*/
+.boton {
+  padding: 10px;
+  margin: 10px;
+  border-style: groove;
+  border-radius: 6px;
+  background-color: rgb(20, 19, 19);
+  color: white;
+}
+
+.reservaSola {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.reservas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 5px;
+}
+
+.reservasAlineadas {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+}
+
+.estiloReservas {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  box-shadow: 1px 1px 20px;
+}
+
+.reservaTelefono {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.whatsappReservas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservaLocal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+/*-----------main Shows------*/
+.show {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  text-align: center;
+}
+
+.showTexto {
+  display: flex;
+  flex-direction: column;
+}
+
+.show img {
+  box-shadow: 1px 1px 20px;
+  width: 200px;
+  height: auto;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.mapa iframe {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.informacionFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 2px;
+}
+
+footer div ul li {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+footer div ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.imagenPiano img {
+  width: 100%;
+  height: auto;
+}
+
+.ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 30px;
+}
+
+.redes img {
+  width: 60px;
+  height: 60px;
+}
+
+.botonesNav {
+  transition: transform 0.5s ease-in-out;
+}
+
+.botonesNav:hover {
+  transform: scale(0.6);
+  list-style: none;
+  box-shadow: 0 0 5px #d8672b;
+  background-color: #d8672b;
+  border-radius: 5px;
+}
+
+.pizza::before {
+  content: "🍕";
+}
+
+.telefono::before {
+  content: "📞";
+  margin-right: 5px;
+}
+
+.auto::before {
+  content: "🚗";
+}
+
+.online::before {
+  content: "🎹";
+}
+
+::selection {
+  background-color: white;
+  color: black;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/*-----carrusel----*/
+.carrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-carrusel {
+  object-fit: cover;
+}
+
+.btn-outline-secondary {
+  transition: transform 1s ease;
+}
+
+.btn-outline-secondary:hover {
+  transform: translate(3px, -3px);
+}
+
+.contacto {
+  transition: transform 1s ease;
+}
+
+.contacto:hover {
+  transform: translate(3px, -3px);
+}
+
+.contactoReserva {
+  transition: transform 3s ease;
+}
+
+.contactoReserva:hover {
+  transform: 3px, -3px;
+}
+
+.boton {
+  transition: transform 0.1s ease, box-shadow 0.1 ease;
+}
+
+.boton:hover {
+  transform: translate(0.5px, 0.5px);
+  box-shadow: 1px 1px 20px;
+}
+
+.boton:active {
+  background-color: grey;
+  transform: translate(0.3px 0.3px);
+  box-shadow: 1px 1px 8px black;
+}
+
+/*------------------keyframe----------*/
+.cartaComidas {
+  animation: aparecer 3s;
+}
+
+.imagenSabores {
+  animation: aparecer 3s;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    scale: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 500px) {
+  * {
+    font-size: 17px;
+  }
+  .logoNombre {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .navegadorEstilo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    margin-left: 2px;
+  }
+  .navegadorEstilo a {
+    font-size: 20px;
+  }
+  .botonesNav {
+    transition: none;
+  }
+  .botonesNav:hover {
+    transform: none;
+  }
+  .imagenSabores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .imagenSabores img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  .contenedorCarta {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .show {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .btn-outline-secondary {
+    margin: 20px;
+    transition: none;
+    transform: none;
+  }
+  .reservas {
+    grid-template-columns: 1fr;
+  }
+  .estiloReservas {
+    margin-bottom: 2px;
+    padding: 20px;
+  }
+  .reservaLocal iframe {
+    width: 100px;
+    height: 100px;
+  }
+  .mapaReservas {
+    display: flex;
+    justify-content: center;
+  }
+  .conocenos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .conocenos img {
+    width: 100%;
+  }
+  .informacionFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+  }
+  .informacionFooter li {
+    font-size: 15px;
+    text-align: center;
+  }
+  .ubicacion li {
+    font-size: 8px;
+  }
+  .redes {
+    gap: 10px;
+    margin-left: 30px;
+  }
+  .redes img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
