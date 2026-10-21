@@ -27,30 +27,51 @@
 }
 
 .btn-carta-online {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  padding: 14px 24px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #ff8a00, #ff5e00);
-  color: #fff;
-  font-weight: 700;
+  gap: 14px;
+  padding: 13px 25px;
+  border: 1px solid #c9a45c;
+  border-radius: 4px;
+  background: #24211e;
+  color: #fff8e9;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
   text-decoration: none;
-  box-shadow: 0 6px 18px rgba(255, 112, 0, 0.25);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
-
+.btn-carta-online span:last-child {
+  color: #d6b56f;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
 .btn-carta-online:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(255, 112, 0, 0.35);
+  background: #c9a45c;
+  border-color: #c9a45c;
+  color: #211d18;
+  transform: translateY(-2px);
 }
-
+.btn-carta-online:hover span:last-child {
+  color: #211d18;
+  transform: translate(3px, -2px);
+}
 .btn-carta-online:focus-visible {
-  outline: 3px solid currentColor;
+  outline: 2px solid #c9a45c;
   outline-offset: 4px;
 }
 
+@media (max-width: 576px) {
+  .btn-carta-online {
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+}
 .navegador {
   position: sticky;
   top: 0;
